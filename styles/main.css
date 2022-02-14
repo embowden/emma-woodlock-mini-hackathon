@@ -9,6 +9,12 @@ body {
   font-family: "Staatliches", cursive;
 }
 
+p a:link {
+  text-decoration: none;
+  color: #654321;
+  font-style: italic;
+}
+
 .header {
   color: white;
   margin: 25px 100px;
@@ -39,6 +45,7 @@ body {
   padding-top: 20px;
 }
 .header__label {
+  font-size: 16px;
   padding-right: 30px;
 }
 .header__btn {
@@ -46,56 +53,57 @@ body {
 }
 .header__button {
   padding: 10px;
+  font-size: 16px;
   font-family: inherit;
   color: white;
   background-color: black;
   border: 0;
 }
 
-a:link {
-  text-decoration: none;
-}
-
 .sandwich {
-  background-color: black;
-  height: 100vh;
+  color: black;
+  margin: 25px 100px 70px 100px;
+  padding-right: 30px;
+  height: 100%;
+  background-color: #e5cec1;
 }
 .sandwich__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-  text-align: center;
-  height: 100vh;
+  position: relative;
+  width: 100%;
 }
 .sandwich__header {
-  width: 75%;
-  color: white;
-  text-align: center;
+  text-align: right;
+  padding-top: 20px;
+  letter-spacing: 5px;
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px double black;
 }
 .sandwich__contents {
-  width: 75%;
-  padding: 20px 0;
-  margin-bottom: 20px;
   display: flex;
+  padding: 20px 0;
 }
 .sandwich__picture {
-  margin: 10px;
-  padding: 15px;
-  border: 10px dotted white;
-  width: 35%;
+  width: 40%;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 .sandwich__summary {
-  padding: 50px;
-  color: white;
+  direction: rtl;
   text-align: justify;
-  margin: 10px;
-  width: 65%;
+  font-size: 20px;
+  width: 60%;
+  padding-left: 20px;
 }
 .sandwich__link {
-  background-color: white;
-  margin-top: 20px;
-  border-radius: 5%;
+  font-size: 16px;
+  text-decoration: none;
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  margin-left: 20px;
   padding: 10px;
-  text-align: center;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
 }/*# sourceMappingURL=main.css.map */
