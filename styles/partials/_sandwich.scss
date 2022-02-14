@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 a:link {
   text-decoration: none;
 }
@@ -30,6 +24,8 @@ a:link {
     // border: 3px solid tomato;
     text-align: center;
   }
+
+
 
   &__contents {
     width: 75%;

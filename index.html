@@ -7,12 +7,22 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <section class="header">
-        <h1 class="header__title">lunch-o-matic</h1>
+        <h1 class="header__title">
+          <span class="header__black">the </span>lunch-o-matic
+        </h1>
         <h2 class="header__subtitle">random sandwich generator</h2>
+        <h3 class="header__intro">so you fancy a sandwich, ey?</h3>
+        <h3 class="header__intro">lets get you something exciting then!</h3>
         <form action="" class="header__form">
           <input type="radio" id="meaty" name="preference" value="meaty" />
           <label class="header__label" for="meaty">Make it MEATY</label>
@@ -21,7 +31,7 @@
           <input type="radio" id="either" name="preference" value="either" />
           <label class="header__label" for="either">Make it EITHER</label>
           <div class="header__btn">
-          <button class="header__button">gimme a sammich!</button>
+            <button class="header__button">gimme a sammich!</button>
           </div>
         </form>
       </section>
