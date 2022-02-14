@@ -119,3 +119,8 @@ function dietPreference(array) {
   }
   return { veggieArray, meatyArray };
 }
+
+//resources
+// https://stackoverflow.com/questions/20677997/javascript-break-string-on-based-on-preceding-consecutive-characters
+// https://spoonacular.com/food-api/console#Dashboard
+// https://www.geeksforgeeks.org/how-to-get-character-array-from-string-in-javascript/
