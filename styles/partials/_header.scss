@@ -48,5 +48,11 @@
     color: white;
     background-color: black;
     border: 0;
+
+    &:hover {
+      background-color: #654321;
+      color: black;
+      font-size: 50px;
+    }
   }
 }

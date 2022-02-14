@@ -35,7 +35,8 @@ function displayRecipe(event) {
   //     .catch((error) => {
   //       console.log(error);
   //     });
-
+  
+  button.textContent = "nah, try again!";
   dietPreference(results);
 
   //function to check radio selection
