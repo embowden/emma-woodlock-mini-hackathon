@@ -1,3 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+  border-bottom: 10px dotted white;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.header__title {
+  padding: 30px 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header__subtitle {
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+.header__form {
+  text-align: center;
+}
+.header__label {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding-right: 30px;
+}
+.header__btn {
+  display: flex;
+  justify-content: center;
+}
+.header__button {
+  border-radius: 5%;
+  padding: 10px;
+  background-color: white;
+  margin-top: 20px;
+  display: block;
+  border: 0;
+}
+
 .sandwich__picture {
   height: 200px;
   width: 200px;
