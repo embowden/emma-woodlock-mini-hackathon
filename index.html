@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <h1 class="header__title">lunch-o-matic</h1>
+        <h2 class="header__subtitle">random sandwich generator</h2>
+        <form action="" class="header__form">
+          <input type="radio" id="meaty" name="preference" value="meaty" />
+          <label for="meaty">Make it MEATY</label>
+          <input type="radio" id="veggie" name="preference" value="veggie" />
+          <label for="veggie">Make it VEGGIE</label>
+          <input type="radio" id="either" name="preference" value="either" />
+          <label for="either">Make it EITHER</label>
+          <button class="header__button">gimme a sammich!</button>
+        </form>
+      </section>
+    </header>
+    <main>
+      <section class="sandwich">
+        <article class="sandwich__container"></article>
+      </section>
+    </main>
+    <script src="./sandwiches.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
