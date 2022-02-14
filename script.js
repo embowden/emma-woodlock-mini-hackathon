@@ -118,8 +118,4 @@ function dietPreference(array) {
     }
   }
   return { veggieArray, meatyArray };
-  console.log(veggieArray);
-  console.log(meatyArray);
 }
-
-// console.log(dietPreference(results));
