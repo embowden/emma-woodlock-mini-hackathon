@@ -192,4 +192,18 @@ p a:link {
 .sandwich__link:hover {
   background-color: #654321;
   color: white;
+}
+
+.svg {
+  color: white;
+  margin: 2% 8%;
+  padding-left: 2.5%;
+  background-color: #E8DED1;
+  text-align: right;
+}
+.svg__image {
+  padding: 20px 20px 20px 0;
+  filter: sepia(100%);
+  width: 15%;
+  height: 15%;
 }/*# sourceMappingURL=main.css.map */

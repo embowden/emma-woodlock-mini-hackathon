@@ -1,0 +1,14 @@
+.svg {
+  color: white;
+  margin: 2% 8%;
+  padding-left: 2.5%;
+  background-color:  #E8DED1;
+  text-align: right;
+
+  &__image {
+    padding: 20px 20px 20px 0;
+    filter: sepia(100%);
+    width: 15%;
+    height: 15%;
+  }
+}
