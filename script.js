@@ -1,6 +1,3 @@
-//ADD SOUNDCLIP
-//CHANGE CLASS FOR SANDWICH
-
 //query for the button
 let button = document.querySelector(".header__button");
 
@@ -9,7 +6,7 @@ let button = document.querySelector(".header__button");
 //   "https://api.spoonacular.com/recipes/complexSearch?apiKey=8f633cb4cc0d42a2b1be3ec9d3740667&query=sandwich&number=30&type=main course&addRecipeInformation=true";
 
 //------ADD AUDIO FOR BUTTON-------//
-let audio = new Audio("");
+let audio = new Audio("./assets/munch-sound-effect.mp3");
 
 //------ADD EVENT LISTENER-------//
 button.addEventListener("click", (event) => {
@@ -25,36 +22,42 @@ function displayRecipe(event) {
   event.preventDefault();
   audio.play();
 
-  // axios
-  //   .get(SANDWICH_API)
-  //   .then((response) => {
-  //     //call the data
-  //     let dataArray = response.data.results;
+  axios
+    .get(SANDWICH_API)
+    .then((response) => {
+      //call the data
+      let dataArray = response.data.results;
 
-  button.textContent = "nah, try again!";
-  // dietPreference(dataArray);
-  dietPreference(results);
+      button.textContent = "nah, try again!";
+      dietPreference(dataArray);
+      // dietPreference(results);
 
-  //function to check radio selection
-  if (document.getElementById("either").checked) {
-    // let randomRecipe = randomIndex(dataArray);
-    let randomRecipe = randomIndex(results);
-    createSandwich(randomRecipe);
-    container.innerHTML = "";
-  } else if (document.getElementById("meaty").checked) {
-    let randomRecipe = randomIndex(meatyArray);
-    createSandwich(randomRecipe);
-    container.innerHTML = "";
-  } else if (document.getElementById("veggie").checked) {
-    let randomRecipe = randomIndex(veggieArray);
-    createSandwich(randomRecipe);
-    container.innerHTML = "";
-  }
-  // })
-  // .catch((error) => {
-  //   console.log(error);
-  // });
+      //function to check radio selection
+      if (document.getElementById("either").checked) {
+        let randomRecipe = randomIndex(dataArray);
+        // let randomRecipe = randomIndex(results);
+        createSandwich(randomRecipe);
+        container.innerHTML = "";
+      } else if (document.getElementById("meaty").checked) {
+        let randomRecipe = randomIndex(meatyArray);
+        createSandwich(randomRecipe);
+        container.innerHTML = "";
+      } else if (document.getElementById("veggie").checked) {
+        let randomRecipe = randomIndex(veggieArray);
+        createSandwich(randomRecipe);
+        container.innerHTML = "";
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 }
+
+// let recipeBTN = document.querySelector(".sandwick__link");
+// let recipeAudio = new Audio("./assets/yummy.mp3");
+// recipeBTN.addEventListener("click", (event) => {
+//   recipeAudio.play(event);
+// });
 
 //------FUNCTIONS-------//
 
@@ -78,7 +81,7 @@ function randomIndex(array) {
 //function to create sandwich section (var - randomRecipe)
 function createSandwich(recipe) {
   let container = document.querySelector(".sandwich__container");
-  container.classList.add("animate__animated", "animate__lightSpeedInRight");
+  container.classList.add("animate__animated", "animate__fadeInLeft");
   container.innerHTML = "";
   let swHeader = makeElement("h1", "sandwich__header", container, recipe.title);
   let contents = makeElement("div", "sandwich__contents", container);
