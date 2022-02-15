@@ -1,7 +1,9 @@
+@use "./animations" as *;
+
 .header {
   color: white;
-  margin: 25px 100px;
-  padding-left: 30px;
+  margin: 2% 8%;
+  padding-left: 2.5%;
   background-color: #aa9183;
 
   &__title {
@@ -20,6 +22,11 @@
     letter-spacing: 5px;
     font-size: 30px;
     padding-bottom: 10px;
+
+    &:hover {
+      animation: violently-shake 0.5s;
+      animation-iteration-count: infinite;
+    }
   }
 
   &__intro {
@@ -52,7 +59,7 @@
     &:hover {
       background-color: #654321;
       color: black;
-      font-size: 50px;
+      font-size: 30px;
     }
   }
 }
